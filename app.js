@@ -45,10 +45,10 @@ const zoomVisibleBtn = document.getElementById("zoomVisible");
 // Base map
 const map = L.map("map", { worldCopyJump: true }).setView([20, 0], 2);
 
-// OpenStreetMap tiles (includes required attribution)
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+// CARTO Positron tiles (clean, mostly Latin/English-style labels in practice)
+L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
   maxZoom: 19,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
 }).addTo(map);
 
 const categoryLayers = new Map();    // category -> L.LayerGroup
