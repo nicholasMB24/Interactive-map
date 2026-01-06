@@ -47,7 +47,7 @@ const panelEl = document.querySelector(".panel");
 const togglePanelBtn = document.getElementById("togglePanel");
 
 // Zoom caps: raise min zoom to prevent the world becoming "too small" inside the container
-const TILE_MIN_ZOOM = 2;   // <- key change (try 2 if you truly need a full-world view)
+const TILE_MIN_ZOOM = 3;   // <- key change (try 2 if you truly need a full-world view)
 const TILE_MAX_ZOOM = 19;
 
 // Base map
