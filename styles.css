@@ -1,0 +1,132 @@
+/* Page & map sizing (embed-friendly) */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Filter panel */
+.panel {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: min(360px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+
+  font: 14px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+}
+
+.panel__header {
+  padding: 12px 12px 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.panel__title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.panel__status {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.panel__actions {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.panel__actions button {
+  appearance: none;
+  border: 1px solid rgba(0,0,0,0.18);
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.panel__actions button:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+.panel__filters {
+  padding: 10px 12px;
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+}
+
+.filter-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.08);
+}
+
+.filter-item:last-child {
+  border-bottom: 0;
+}
+
+.filter-item input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.filter-item__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.filter-item__label {
+  font-weight: 600;
+}
+
+.filter-item__count {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.panel__footer {
+  padding: 10px 12px 12px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.panel__hint {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Popup styling */
+.popup h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.popup .meta {
+  margin: 0 0 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.popup .desc {
+  margin: 0;
+  font-size: 13px;
+}
