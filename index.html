@@ -15,27 +15,35 @@
 </head>
 
 <body>
-  <div id="map"></div>
+  <div class="map-shell">
+    <div id="map"></div>
 
-  <aside class="panel" aria-label="Map filters">
-    <div class="panel__header">
-      <div class="panel__title">Supply Chain Risk Map</div>
-      <div id="status" class="panel__status">Loading events…</div>
-    </div>
+    <aside class="panel" aria-label="Map filters">
+      <div class="panel__header">
+        <div class="panel__title">Supply Chain Risk Map</div>
+        <div id="status" class="panel__status">Loading events…</div>
 
-    <div class="panel__actions">
-      <button id="selectAll" type="button">Select all</button>
-      <button id="selectNone" type="button">Select none</button>
-      <button id="zoomVisible" type="button" title="Zoom to visible markers">Zoom</button>
-    </div>
+        <button id="togglePanel" class="panel__toggle" type="button" aria-expanded="true">
+          Hide filters
+        </button>
+      </div>
 
-    <div id="filters" class="panel__filters"></div>
+      <div id="panelBody" class="panel__body">
+        <div class="panel__actions">
+          <button id="selectAll" type="button">Select all</button>
+          <button id="selectNone" type="button">Select none</button>
+          <button id="zoomVisible" type="button" title="Zoom to visible markers">Zoom</button>
+        </div>
 
-    <div class="panel__footer">
-      <div><strong>Visible:</strong> <span id="visibleCount">0</span></div>
-      <div class="panel__hint">Tip: untick categories to filter markers.</div>
-    </div>
-  </aside>
+        <div id="filters" class="panel__filters"></div>
+
+        <div class="panel__footer">
+          <div><strong>Visible:</strong> <span id="visibleCount">0</span></div>
+          <div class="panel__hint">Tip: untick categories to filter markers.</div>
+        </div>
+      </div>
+    </aside>
+  </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js" defer></script>
