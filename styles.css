@@ -21,7 +21,8 @@ html, body {
 .panel {
   position: absolute;
   top: 12px;
-  left: 12px;
+  right: 12px;
+  left: auto;
   width: min(360px, calc(100% - 24px));
   max-height: calc(100% - 24px);
   overflow: hidden;
