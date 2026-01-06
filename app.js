@@ -42,6 +42,10 @@ const selectAllBtn = document.getElementById("selectAll");
 const selectNoneBtn = document.getElementById("selectNone");
 const zoomVisibleBtn = document.getElementById("zoomVisible");
 
+// Panel collapse elements (requires updated index.html)
+const panelEl = document.querySelector(".panel");
+const togglePanelBtn = document.getElementById("togglePanel");
+
 // Base map
 const map = L.map("map").setView([20, 0], 2);
 
@@ -50,11 +54,35 @@ const bounds = L.latLngBounds([[-85, -180], [85, 180]]);
 map.setMaxBounds(bounds);
 map.options.maxBoundsViscosity = 1.0; // 1.0 = fully “sticky” at the edge
 
+// CARTO Positron tiles
 L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
   maxZoom: 19,
   noWrap: true,
-  attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+  attribution: "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
 }).addTo(map);
+
+// Collapsible panel behaviour
+function setPanelCollapsed(collapsed) {
+  if (!panelEl || !togglePanelBtn) return;
+
+  panelEl.classList.toggle("is-collapsed", collapsed);
+  togglePanelBtn.setAttribute("aria-expanded", String(!collapsed));
+  togglePanelBtn.textContent = collapsed ? "Show filters" : "Hide filters";
+
+  // Leaflet needs a resize signal when UI overlays change size
+  setTimeout(() => map.invalidateSize(), 50);
+}
+
+// Default: expanded
+setPanelCollapsed(false);
+
+// Toggle on click
+if (togglePanelBtn) {
+  togglePanelBtn.addEventListener("click", () => {
+    const collapsed = panelEl?.classList.contains("is-collapsed") ?? false;
+    setPanelCollapsed(!collapsed);
+  });
+}
 
 const categoryLayers = new Map();    // category -> L.LayerGroup
 const categoryCounts = new Map();    // category -> number
