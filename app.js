@@ -43,11 +43,16 @@ const selectNoneBtn = document.getElementById("selectNone");
 const zoomVisibleBtn = document.getElementById("zoomVisible");
 
 // Base map
-const map = L.map("map", { worldCopyJump: true }).setView([20, 0], 2);
+const map = L.map("map").setView([20, 0], 2);
 
-// CARTO Positron tiles (clean, mostly Latin/English-style labels in practice)
+// Prevent the world from repeating left/right and stop endless panning
+const bounds = L.latLngBounds([[-85, -180], [85, 180]]);
+map.setMaxBounds(bounds);
+map.options.maxBoundsViscosity = 1.0; // 1.0 = fully “sticky” at the edge
+
 L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
   maxZoom: 19,
+  noWrap: true,
   attribution: 'Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
 }).addTo(map);
 
