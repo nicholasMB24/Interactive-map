@@ -46,7 +46,13 @@
     </aside>
   </div>
 
- <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <!-- Leaflet JS (REQUIRED) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- MarkerCluster plugin (must be AFTER Leaflet) -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- Your app (must be AFTER both) -->
   <script src="app.js" defer></script>
 </body>
 </html>
