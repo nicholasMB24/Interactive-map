@@ -188,14 +188,16 @@ selectAllBtn.addEventListener("click", () => setAllCheckboxes(true));
 selectNoneBtn.addEventListener("click", () => setAllCheckboxes(false));
 
 zoomVisibleBtn.addEventListener("click", () => {
-  const visibleMarkers = L.featureGroup();
+  const b = L.latLngBounds([]);
 
   for (const [cat, layer] of categoryLayers.entries()) {
     if (!map.hasLayer(layer)) continue;
-    layer.eachLayer(m => visibleMarkers.addLayer(m));
+
+    // markerClusterGroup provides getBounds()
+    const lb = layer.getBounds?.();
+    if (lb && lb.isValid && lb.isValid()) b.extend(lb);
   }
 
-  const b = visibleMarkers.getBounds();
   if (b.isValid()) map.fitBounds(b, { padding: [30, 30], maxZoom: TILE_MAX_ZOOM });
 });
 
