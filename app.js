@@ -31,11 +31,10 @@ function popupHTML(p) {
   const method = escapeHTML(pickProp(p, ["geocode_method"], ""));
 
   const metaParts = [
-    category,
-    date ? `Date: ${date}` : "",
-    country ? `Country: ${country}` : "",
-    (confidence || method) ? `Geocode: ${[confidence, method].filter(Boolean).join(" / ")}` : ""
-  ].filter(Boolean);
+  category,
+  date ? `Date: ${date}` : "",
+  country ? `Country: ${country}` : ""
+].filter(Boolean);
 
   return `
     <div class="popup">
