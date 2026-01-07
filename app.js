@@ -10,14 +10,25 @@ function escapeHTML(value) {
     .replaceAll("'", "&#039;");
 }
 
+// Pick the first non-empty property value from a list of candidate keys
+function pickProp(obj, keys, fallback = "") {
+  for (const k of keys) {
+    const v = obj?.[k];
+    if (v === undefined || v === null) continue;
+    const t = String(v).trim();
+    if (t !== "") return v;
+  }
+  return fallback;
+}
+
 function popupHTML(p) {
-  const title = escapeHTML(p.title || "Untitled event");
-  const category = escapeHTML(p.category || "Uncategorised");
-  const date = escapeHTML(p.date || "");
-  const country = escapeHTML(p.country || "");
-  const desc = escapeHTML(p.description || "");
-  const confidence = escapeHTML(p.geocode_confidence || "");
-  const method = escapeHTML(p.geocode_method || "");
+  const title = escapeHTML(pickProp(p, ["title", "title*"], "Untitled event"));
+  const category = escapeHTML(pickProp(p, ["category", "category *", "category*"], "Uncategorised"));
+  const date = escapeHTML(pickProp(p, ["date"], ""));
+  const country = escapeHTML(pickProp(p, ["country"], ""));
+  const desc = escapeHTML(pickProp(p, ["description", "description*"], ""));
+  const confidence = escapeHTML(pickProp(p, ["geocode_confidence"], ""));
+  const method = escapeHTML(pickProp(p, ["geocode_method"], ""));
 
   const metaParts = [
     category,
@@ -46,7 +57,7 @@ const zoomVisibleBtn = document.getElementById("zoomVisible");
 const panelEl = document.querySelector(".panel");
 const togglePanelBtn = document.getElementById("togglePanel");
 
-// Zoom caps (prevents over-zoom tile errors)
+// Zoom caps
 const TILE_MIN_ZOOM = 2;
 const TILE_MAX_ZOOM = 19;
 
@@ -59,7 +70,7 @@ const map = L.map("map", {
 // Prevent the world from repeating left/right and stop endless panning
 const bounds = L.latLngBounds([[-85, -180], [85, 180]]);
 map.setMaxBounds(bounds);
-map.options.maxBoundsViscosity = 1.0; // 1.0 = fully “sticky” at the edge
+map.options.maxBoundsViscosity = 1.0;
 
 // CARTO Positron tiles
 L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
@@ -78,14 +89,12 @@ function setPanelCollapsed(collapsed) {
   togglePanelBtn.setAttribute("aria-expanded", String(!collapsed));
   togglePanelBtn.textContent = collapsed ? "Show filters" : "Hide filters";
 
-  // Leaflet needs a resize signal when UI overlays change size
   setTimeout(() => map.invalidateSize(), 50);
 }
 
 // Default: expanded
 setPanelCollapsed(false);
 
-// Toggle on click
 if (togglePanelBtn) {
   togglePanelBtn.addEventListener("click", () => {
     const collapsed = panelEl?.classList.contains("is-collapsed") ?? false;
@@ -207,7 +216,7 @@ zoomVisibleBtn.addEventListener("click", () => {
       const [lon, lat] = geom.coordinates;
       if (typeof lat !== "number" || typeof lon !== "number") continue;
 
-      const category = props.category || "Uncategorised";
+      const category = pickProp(props, ["category", "category *", "category*"], "Uncategorised");
       categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
 
       const marker = L.marker([lat, lon]);
