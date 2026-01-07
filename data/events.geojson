@@ -1,0 +1,1058 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.7137847,
+          7.5554942
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-001",
+        "category *": "Natural Disasters & Weather",
+        "title*": "Cyclone Ditwah",
+        "date": null,
+        "country": "Sri Lanka",
+        "location text*": null,
+        "description*": "Cyclone Ditwah: Hit Sri Lanka at the end of November/early December, closing the Port of Colombo for 72 hours and leaving a 2-3 day berthing queue.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_1",
+        "geocode_query": "Sri Lanka",
+        "geocode_key": "sri lanka",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Sri Lanka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.084791,
+          19.928168
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-002",
+        "category *": "Natural Disasters & Weather",
+        "title*": "Southeast Asia Flooding",
+        "date": null,
+        "country": null,
+        "location text*": "Southeast Asia",
+        "description*": "Southeast Asia Flooding: Severe river and flash floods in Vietnam, Thailand, and Indonesia disrupted containerized exports and cross-border trucking, with delays expected to linger into Q1 2026.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_2",
+        "geocode_query": "Southeast Asia",
+        "geocode_key": "southeast asia",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.445882,
+          39.7837304
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-003",
+        "category *": "Natural Disasters & Weather",
+        "title*": "Severe winter weather in the U.S. Midwest and other regions tightened trucking",
+        "date": null,
+        "country": "US",
+        "location text*": "Midwest America",
+        "description*": "Severe winter weather in the U.S. Midwest and other regions tightened trucking capacity during the December peak. These storms disrupted freight flows, cancelled flights and pushed up regional shipping rates during typical holiday surges.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_3",
+        "geocode_query": "US",
+        "geocode_key": "us",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674297,
+          42.6384261
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-004",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "Rutigliano Logistics Center, Italy",
+        "date": null,
+        "country": "Italy",
+        "location text*": "Italy",
+        "description*": "Rutigliano Logistics Center, Italy: On December 27, 2025, a large fire devastated a warehouse in the Rutigliano industrial area of Bari. The facility, operated by Terminal Puglia, suffered extensive damage, disrupting regional logistics operations during the year-end shipping period.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_4",
+        "geocode_query": "Italy",
+        "geocode_key": "italy",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Italia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.8902853,
+          -2.4833826
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-005",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "Central Java Food Facility, Indonesia",
+        "date": null,
+        "country": "Indonesia",
+        "location text*": "Indonesia",
+        "description*": "Central Java Food Facility, Indonesia: A major blaze broke out on December 1, 2025, at a food manufacturing facility. The fire caused significant damage to warehouses, impacting the local food supply chain.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_5",
+        "geocode_query": "Indonesia",
+        "geocode_key": "indonesia",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Indonesia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.7453061,
+          64.6863136
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-006",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "Leningrad Region, Russia",
+        "date": null,
+        "country": "Russia",
+        "location text*": "Russia",
+        "description*": "Leningrad Region, Russia: A significant warehouse fire occurred on December 27, 2025, resulting in extensive damage and creating safety risks for surrounding industrial areas.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_6",
+        "geocode_query": "Russia",
+        "geocode_key": "russia",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Россия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.445882,
+          39.7837304
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-007",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "ONE Henry Hudson (Port of Los Angeles)",
+        "date": null,
+        "country": "US",
+        "location text*": "Port of Los Angeles",
+        "description*": "ONE Henry Hudson (Port of Los Angeles): Following a fire that originally broke out on November 21, the discharge of damaged containers from the vessel began in December. All undamaged containers had been offloaded by December 26, but the secondary discharge phase for damaged cargo and water removal from the hold has continued into early 2026.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_7",
+        "geocode_query": "US",
+        "geocode_key": "us",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.445882,
+          39.7837304
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-008",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "MV Amalia",
+        "date": null,
+        "country": "US",
+        "location text*": "Texas Coast",
+        "description*": "MV Amalia: On December 19, the bulk carrier was hit by a major fire, whilst sailing from Houston, Texas to Walvis Bay, Namibia. General Average has been declared.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_8",
+        "geocode_query": "US",
+        "geocode_key": "us",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1857978,
+          22.3492155
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-009",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "W Kyrenia (Hong Kong), a 6,802 TEU vessel suffered a power failure‚Ä¶",
+        "date": null,
+        "country": "Hong Kong",
+        "location text*": "Hong Kong",
+        "description*": "W Kyrenia (Hong Kong), a 6,802 TEU vessel suffered a power failure resulting in possible cargo loss and damage.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_9",
+        "geocode_query": "Hong Kong",
+        "geocode_key": "hong kong",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "香港 Hong Kong, 中国"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2765753,
+          54.7023545
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-010",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "Cellus",
+        "date": null,
+        "country": "UK",
+        "location text*": "Sunderland",
+        "description*": "Cellus: the 369TEU vessel ran aground in the Port of Sunderland on 19 December sailing from Brunsbuttel, Germany resulting in possible cargo loss and damage.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_10",
+        "geocode_query": "UK",
+        "geocode_key": "uk",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United Kingdom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.168178,
+          42.840731
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-011",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "Black Sea Drone Strike",
+        "date": null,
+        "country": null,
+        "location text*": "Black Sea",
+        "description*": "Black Sea Drone Strike: On December 18, 2025, a drone strike killed two seafarers and caused fires aboard a vessel in the Black Sea, further escalating regional shipping risks.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_11",
+        "geocode_query": "Black sea",
+        "geocode_key": "black sea ",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9088133,
+          4.099917
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-012",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "Aerosucre Boeing 727-200 (Colombia)",
+        "date": null,
+        "country": "Colombia",
+        "location text*": "Colombia",
+        "description*": "Aerosucre Boeing 727-200 (Colombia): On December 12, 2025, a Boeing 727 freighter operated by Aerosucre suffered a landing gear collapse upon touchdown at Ernesto Cortissoz International Airport in Barranquilla. The incident resulted in significant damage to the aircraft and caused the temporary closure of the airport, though no injuries were reported among the crew.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_12",
+        "geocode_query": "Colombia",
+        "geocode_key": "colombia",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Colombia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.445882,
+          39.7837304
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-013",
+        "category *": "Operational Incidents (Fires, accidents, industrial incidents)",
+        "title*": "MD-11 Fleet Grounding",
+        "date": null,
+        "country": "US",
+        "location text*": null,
+        "description*": "MD-11 Fleet Grounding: Following the fatal crash of UPS Airlines Flight 2976 on November 4, 2025, the FAA ordered inspections that have led to the grounding of McDonnell Douglas MD-11 freighters. By December 2025, these groundings had removed approximately 9% of the UPS fleet and 4% of the FedEx fleet from operation. The loss of 54 MD-11 planes during the peak December volume period caused express freight delays and forced some cargo onto passenger planes and ground transport.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_13",
+        "geocode_query": "US",
+        "geocode_key": "us",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.0077097,
+          23.6585116
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-014",
+        "category *": "Trade Policy (Tariffs, quotas, barriers)",
+        "title*": "Mexico Formalized Tariffs",
+        "date": null,
+        "country": "Mexico",
+        "location text*": "Mexico City",
+        "description*": "Mexico Formalized Tariffs: On December 29, 2025, Mexico's legislative reform to the General Import and Export Taxes Law was published, formalizing and making permanent the increased tariffs (ranging from 5% to 50%) on over 1,400 product categories, including automotive parts, textiles, steel, and plastics. These changes, effective January 1, 2026, primarily target non-FTA countries such as China, South Korea, and India, prompting concern and potential shifts in sourcing for companies serving the North American market.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_14",
+        "geocode_query": "Mexico",
+        "geocode_key": "mexico",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "México"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.351697,
+          50.8465573
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-015",
+        "category *": "Trade Policy (Tariffs, quotas, barriers)",
+        "title*": "EU Carbon Border Adjustment Mechanism (CBAM)",
+        "date": null,
+        "country": "Brussels",
+        "location text*": "Europe",
+        "description*": "EU Carbon Border Adjustment Mechanism (CBAM): On December 17, 2025, the European Commission proposed measures to strengthen and close loopholes in the CBAM to prevent circumvention, adding another layer of non-tariff complexity and compliance burden for importers.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_15",
+        "geocode_query": "Brussels",
+        "geocode_key": "brussels",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.366271,
+          12.543756
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-016",
+        "category *": "Piracy",
+        "title*": "Bab el-Mandeb Attack (Dec 5)",
+        "date": null,
+        "country": null,
+        "location text*": "Red Sea",
+        "description*": "Bab el-Mandeb Attack (Dec 5): A bulk carrier was attacked twice by suspected pirates in the narrow Bab el-Mandeb Strait. The vessel was chased by small craft that opened fire, but armed private security on board repelled the attack.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_16",
+        "geocode_query": "Bab el-Mandeb",
+        "geocode_key": "bab el-mandeb ",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.083416,
+          8.3676771
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-017",
+        "category *": "Piracy",
+        "title*": "Throughout December, Somali pirates increasingly used hijacked dhows as motherships and advanced‚Ä¶",
+        "date": null,
+        "country": "Somalia",
+        "location text*": "Somalia Coast",
+        "description*": "Throughout December, Somali pirates increasingly used hijacked dhows as motherships and advanced GPS technology to launch long-range attacks up to 800 nautical miles from the coast.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_17",
+        "geocode_query": "Somalia",
+        "geocode_key": "somalia",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Soomaaliya الصومال"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.526336,
+          18.901902
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-018",
+        "category *": "Piracy",
+        "title*": "Houthi Captive Release (Dec 3)",
+        "date": null,
+        "country": null,
+        "location text*": "Red Sea (maritime region)",
+        "description*": "Houthi Captive Release (Dec 3): 11 crew members from the Greek-owned vessel Eternity C, previously taken by Houthi forces, were released.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_18",
+        "geocode_query": "Red Sea",
+        "geocode_key": "red sea",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1109318,
+          8.0018709
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-019",
+        "category *": "Piracy",
+        "title*": "Naval Quarantine (Dec 17)",
+        "date": null,
+        "country": "Venezuela",
+        "location text*": "Venezuela Coast",
+        "description*": "Naval Quarantine (Dec 17): The US formally enacted a naval quarantine on sanctioned oil tankers traveling to and from Venezuela.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_19",
+        "geocode_query": "Venezuela",
+        "geocode_key": "venezuela",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Venezuela"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.930849,
+          3.026698
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-020",
+        "category *": "Piracy",
+        "title*": "Crew Kidnappings (Dec 3)",
+        "date": null,
+        "country": null,
+        "location text*": "West Africa and Gulf of Guinea",
+        "description*": "Crew Kidnappings (Dec 3): Nine crew members were abducted from the Portuguese-flagged LPG carrier CGAS Saturn but returned safely at the end of December.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_20",
+        "geocode_query": "Gulf of Guinea",
+        "geocode_key": "gulf of guinea",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.698003,
+          4.040303
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-021",
+        "category *": "Piracy",
+        "title*": "Malacca Strait Surge",
+        "date": null,
+        "country": null,
+        "location text*": "Malacca Strait",
+        "description*": "Malacca Strait Surge: Data compiled by ReCAAP has found that the region remained the global hotspot for piracy, with incidents increasing from 107 to 127 by 10 December 2025 compared with the year before.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_21",
+        "geocode_query": "Malacca Strait",
+        "geocode_key": "malacca strait ",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.445882,
+          39.7837304
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-022",
+        "category *": "Crime, Fraud & Corruption",
+        "title*": "PT Untung Bersama Sejahtera Scheme (USA)",
+        "date": null,
+        "country": "US",
+        "location text*": "USA",
+        "description*": "PT Untung Bersama Sejahtera Scheme (USA): In late 2025, the U.S. Attorney's Office for the District of New Jersey charged an Indonesian jewellery manufacturer and its co-owner in an $86 million duty evasion scheme. The defendants allegedly avoided tariffs on $1.2 billion in jewellery by transhipping goods through Jordan to falsely claim duty-free status under the US-Jordan Free Trade Agreement.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_22",
+        "geocode_query": "US",
+        "geocode_key": "us",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.445882,
+          39.7837304
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-023",
+        "category *": "Crime, Fraud & Corruption",
+        "title*": "Forklift Origin Falsification",
+        "date": null,
+        "country": "US",
+        "location text*": "Washington DC",
+        "description*": "Forklift Origin Falsification: The DOJ has also pursued charges against executives for importing Chinese-manufactured forklifts while concealing their origin to evade Section 301 tariffs. The scheme involved undervaluing goods in customs documentation and falsely labelling them as U.S.-made.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_23",
+        "geocode_query": "US",
+        "geocode_key": "us",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8883335,
+          46.603354
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-024",
+        "category *": "Cyber attacks & ICT Disruption",
+        "title*": "La Poste (France)",
+        "date": null,
+        "country": "France",
+        "location text*": "France",
+        "description*": "La Poste (France): In late December, a major cyber-attack attributed to the pro-Russian hacktivist group NoName057(16) disrupted digital systems for the French postal service. The attack paralyzed online parcel tracking, mail distribution services, and banking operations for La Banque Postale.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_24",
+        "geocode_query": "France",
+        "geocode_key": "france",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "France"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2765753,
+          54.7023545
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-025",
+        "category *": "Cyber attacks & ICT Disruption",
+        "title*": "Cloudflare (Global)",
+        "date": null,
+        "country": null,
+        "location text*": "Global",
+        "description*": "Cloudflare (Global): On December 5, 2025, a widespread outage impacted approximately 28% of all HTTP traffic served by Cloudflare. The disruption was triggered by an emergency patch for a vulnerability, which was being actively exploited by nation-state actors and cybercriminals.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_25",
+        "geocode_query": "UK",
+        "geocode_key": "uk",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.351697,
+          50.8465573
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-026",
+        "category *": "Cyber attacks & ICT Disruption",
+        "title*": "European Critical Infrastructure (DDoS Campaign)",
+        "date": null,
+        "country": null,
+        "location text*": "Europe",
+        "description*": "European Critical Infrastructure (DDoS Campaign): Between December 22 and 28, a coordinated DDoS campaign by the group NoName057(16) recorded over 6,500 attack entries targeting 158 domains across Europe. Finland was most heavily hit (53.3% of attacks), followed by France and various international logistics and technology domains.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_26",
+        "geocode_query": "Brussels",
+        "geocode_key": "brussels",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.2394179,
+          36.5748441
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-027",
+        "category *": "Cyber attacks & ICT Disruption",
+        "title*": "Asahi Logistics",
+        "date": null,
+        "country": "Japan",
+        "location text*": "Tokyo",
+        "description*": "Asahi Logistics: After a late September attack, Japan's Asahi Group confirmed in late 2025 that full restoration of its logistical operations would likely not be achieved until February 2026, illustrating the deep, multi-month recovery timelines for major supply chain breaches.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_27",
+        "geocode_query": "Japan",
+        "geocode_key": "japan",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "日本"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2765753,
+          54.7023545
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-028",
+        "category *": "Cyber attacks & ICT Disruption",
+        "title*": "Scattered Spider (Retail Supply Chains)",
+        "date": null,
+        "country": "UK",
+        "location text*": "Birmingham",
+        "description*": "Scattered Spider (Retail Supply Chains): This group remained highly active in December, having been linked to 2025's high-profile breaches at M&S, Co-op, and Harrods. The group used social engineering and \"DragonForce\" ransomware to exfiltrate data, with M&S estimating total losses of ¬£300 million by year-end.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_28",
+        "geocode_query": "UK",
+        "geocode_key": "uk",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "United Kingdom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1109318,
+          8.0018709
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-029",
+        "category *": "Geopolitical & Security",
+        "title*": "The United States launched a forceful military campaign against Venezuelan oil exports,",
+        "date": null,
+        "country": "Venezuela",
+        "location text*": "Caracas",
+        "description*": "The United States launched a forceful military campaign against Venezuelan oil exports, including a formal naval quarantine on sanctioned tankers traveling to/from Venezuela.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_29",
+        "geocode_query": "Venezuela",
+        "geocode_key": "venezuela",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Venezuela"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1109318,
+          8.0018709
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-030",
+        "category *": "Geopolitical & Security",
+        "title*": "Vessel Seizures",
+        "date": null,
+        "country": "Venezuela",
+        "location text*": "Venezuela Coast",
+        "description*": "Vessel Seizures: U.S. forces seized the tanker Skipper on December 10 for alleged sanctions evasion. On December 27, the US Coast Guard engaged in a maritime chase with the \"dark fleet\" tanker Bella 1.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_30",
+        "geocode_query": "Venezuela",
+        "geocode_key": "venezuela",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Venezuela"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.526336,
+          18.901902
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-031",
+        "category *": "Geopolitical & Security",
+        "title*": "Despite earlier 2025 ceasefire attempts, the Red Sea remained a high-risk zone",
+        "date": null,
+        "country": null,
+        "location text*": "Red Sea",
+        "description*": "Despite earlier 2025 ceasefire attempts, the Red Sea remained a high-risk zone for freight.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_31",
+        "geocode_query": "Red Sea",
+        "geocode_key": "red sea",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.526336,
+          18.901902
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-032",
+        "category *": "Geopolitical & Security",
+        "title*": "Houthi Hostilities",
+        "date": null,
+        "country": null,
+        "location text*": "Red Sea",
+        "description*": "Houthi Hostilities: While a fragile pause was reported in late 2025, security experts warned that \"trust is not restored overnight\". Most major container lines, including Maersk and Hapag-Lloyd, continued to divert freight via the Cape of Good Hope.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_32",
+        "geocode_query": "Red Sea",
+        "geocode_key": "red sea",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.168178,
+          42.840731
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-033",
+        "category *": "Geopolitical & Security",
+        "title*": "Port Infrastructure Attacks",
+        "date": null,
+        "country": null,
+        "location text*": "Black Sea",
+        "description*": "Port Infrastructure Attacks: On December 31, 2025, Russian strikes damaged ports and commercial ships in Odesa, disrupting year-end grain and cargo exports.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_33",
+        "geocode_query": "Black sea",
+        "geocode_key": "black sea ",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.168178,
+          42.840731
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-034",
+        "category *": "Geopolitical & Security",
+        "title*": "Drone Escalation",
+        "date": null,
+        "country": null,
+        "location text*": "Black Sea",
+        "description*": "Drone Escalation: Ukraine's drone capabilities expanded beyond the Black Sea by late December, targeting inland logistics and energy infrastructure.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_34",
+        "geocode_query": "Black sea",
+        "geocode_key": "black sea ",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.977697,
+          23.693892
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-035",
+        "category *": "Geopolitical & Security",
+        "title*": "Taiwan Strait Drills",
+        "date": null,
+        "country": null,
+        "location text*": "Taiwan and South China Sea",
+        "description*": "Taiwan Strait Drills: On December 29, 2025, the China Coast Guard conducted coordinated drills, including vessel boarding and seizure exercises, in shipping lanes off eastern Taiwan.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_35",
+        "geocode_query": "Taiwan",
+        "geocode_key": "taiwan ",
+        "geocode_confidence": "low",
+        "geocode_method": "failed",
+        "geocode_display_name": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674297,
+          42.6384261
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-036",
+        "category *": "Labour & Industrial Action",
+        "title*": "Italy Coordinated Strikes (December 17, 2025)",
+        "date": null,
+        "country": "Italy",
+        "location text*": "Rome",
+        "description*": "Italy Coordinated Strikes (December 17, 2025): A four-hour walkout paralyzed Italian hubs. Action involved air traffic controllers (ENAV), ground handling workers (Assohandlers), and crew from ITA Airways, Vueling, Air France, and KLM.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_36",
+        "geocode_query": "Italy",
+        "geocode_key": "italy",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Italia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.1353519,
+          39.6621648
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-037",
+        "category *": "Labour & Industrial Action",
+        "title*": "Portugal General Strike (December 11, 2025)",
+        "date": null,
+        "country": "Portugal",
+        "location text*": "Lisbon",
+        "description*": "Portugal General Strike (December 11, 2025): Opposing labour reforms, this action grounded flights at Lisbon and Porto airports and disrupted national rail and urban transport.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_37",
+        "geocode_query": "Portugal",
+        "geocode_key": "portugal",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Portugal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674297,
+          42.6384261
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-038",
+        "category *": "Labour & Industrial Action",
+        "title*": "Italy General Strike (December 12, 2025)",
+        "date": null,
+        "country": "Italy",
+        "location text*": "Rome",
+        "description*": "Italy General Strike (December 12, 2025): Rail services (Trenitalia, Trenord) were affected with train services cancelled. Ferry services between the mainland and Sardinia/Sicily also faced a three-day strike from December 9‚Äì11.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_38",
+        "geocode_query": "Italy",
+        "geocode_key": "italy",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Italia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.674297,
+          42.6384261
+        ]
+      },
+      "properties": {
+        "id*": "SCR-2025-12-039",
+        "category *": "Labour & Industrial Action",
+        "title*": "Italy Logistics Strike (December 22‚Äì24, 2025)",
+        "date": null,
+        "country": "Italy",
+        "location text*": "Rome",
+        "description*": "Italy Logistics Strike (December 22‚Äì24, 2025): Freight logistics services across Italy held a three-day walkout just before Christmas, creating rolling delays in supply chains already impacted by earlier general strikes.",
+        "source_doc": null,
+        "location_text": null,
+        "id": "row_39",
+        "geocode_query": "Italy",
+        "geocode_key": "italy",
+        "geocode_confidence": "low",
+        "geocode_method": "country_centroid",
+        "geocode_display_name": "Italia"
+      }
+    }
+  ]
+}
