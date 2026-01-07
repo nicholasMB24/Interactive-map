@@ -42,12 +42,12 @@ const selectAllBtn = document.getElementById("selectAll");
 const selectNoneBtn = document.getElementById("selectNone");
 const zoomVisibleBtn = document.getElementById("zoomVisible");
 
-// Panel collapse elements (requires updated index.html)
+// Panel collapse elements
 const panelEl = document.querySelector(".panel");
 const togglePanelBtn = document.getElementById("togglePanel");
 
-// Zoom caps: raise min zoom to prevent the world becoming "too small" inside the container
-const TILE_MIN_ZOOM = 2;   // <- key change (try 2 if you truly need a full-world view)
+// Zoom caps (prevents over-zoom tile errors)
+const TILE_MIN_ZOOM = 2;
 const TILE_MAX_ZOOM = 19;
 
 // Base map
@@ -225,9 +225,6 @@ zoomVisibleBtn.addEventListener("click", () => {
 
     const b = allMarkers.getBounds();
     if (b.isValid()) map.fitBounds(b, { padding: [30, 30], maxZoom: TILE_MAX_ZOOM });
-
-    // Safety: never end up below min zoom (prevents "tiny world in grey space")
-    if (map.getZoom() < TILE_MIN_ZOOM) map.setZoom(TILE_MIN_ZOOM);
 
     statusEl.textContent = `Loaded ${allMarkers.getLayers().length} events`;
   } catch (err) {

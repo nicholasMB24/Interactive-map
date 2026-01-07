@@ -21,8 +21,7 @@ html, body {
 .panel {
   position: absolute;
   top: 12px;
-  right: 12px;
-  left: auto;
+  left: 12px;
   width: min(360px, calc(100% - 24px));
   max-height: calc(100% - 24px);
   overflow: hidden;
@@ -115,7 +114,6 @@ html, body {
 /* Filter list */
 .panel__filters {
   padding: 10px 12px;
-  /* Use container height, not viewport height */
   max-height: calc(100% - 200px);
   overflow: auto;
 }
