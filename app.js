@@ -108,7 +108,13 @@ const allMarkers = L.featureGroup(); // to fit bounds / zoom visible
 function getOrCreateCategoryLayer(category) {
   const key = category || "Uncategorised";
   if (!categoryLayers.has(key)) {
-    categoryLayers.set(key, L.layerGroup());
+    // Cluster group per category (so your checkbox filtering still works)
+    const cluster = L.markerClusterGroup({
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      zoomToBoundsOnClick: true
+    });
+    categoryLayers.set(key, cluster);
   }
   return categoryLayers.get(key);
 }
