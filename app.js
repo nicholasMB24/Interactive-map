@@ -10,6 +10,42 @@ function escapeHTML(value) {
     .replaceAll("'", "&#039;");
 }
 
+// Map category -> icon file (stored in assets/icons/)
+const CATEGORY_ICON_FILE = {
+  "Natural Disasters & Weather": "cloud-bolt-solid-full.svg",
+  "Operational Incidents (Fires, accidents, industrial incidents)": "triangle-exclamation-solid-full.svg",
+  "Infrastructure & Logistics Failure": "wrench-solid-full.svg",
+  "Trade Policy (Tariffs, quotas, barriers)": "scale-balanced-solid-full.svg",
+  "Regulatory & Compliance": "gavel-solid-full.svg",
+  "Piracy": "skull-crossbones-solid-full.svg",
+  "Cyber attacks & ICT Disruption": "bug-solid-full.svg",
+  "Geopolitical & Security": "shield-solid-full.svg",
+  "Labour & Industrial Action": "people-group-solid-full.svg",
+  "Crime, Fraud & Corruption": "money-bill-solid-full.svg",
+  "Other": "question-solid-full.svg",
+  "Uncategorised": "question-solid-full.svg"
+};
+
+function normaliseCategory(cat) {
+  const c = String(cat ?? "").trim();
+  return c || "Uncategorised";
+}
+
+function makeCategoryIcon(category) {
+  const cat = normaliseCategory(category);
+  const filename = CATEGORY_ICON_FILE[cat] || CATEGORY_ICON_FILE["Other"];
+
+  // IMPORTANT: relative path from index.html
+  const src = `assets/icons/${filename}`;
+
+  return L.divIcon({
+    className: "category-marker",
+    html: `<div class="category-marker__pin"><img src="${src}" alt="" /></div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 28],
+    popupAnchor: [0, -24]
+  });
+}
 // Pick the first non-empty property value from a list of candidate keys
 function pickProp(obj, keys, fallback = "") {
   for (const k of keys) {
@@ -226,7 +262,7 @@ zoomVisibleBtn.addEventListener("click", () => {
       const category = pickProp(props, ["category", "category *", "category*"], "Uncategorised");
       categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
 
-      const marker = L.marker([lat, lon]);
+      const marker = L.marker([lat, lon], { icon: makeCategoryIcon(category) });
       marker.bindPopup(popupHTML(props), { maxWidth: 320 });
 
       const layer = getOrCreateCategoryLayer(category);
