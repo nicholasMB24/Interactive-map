@@ -141,16 +141,29 @@ const categoryLayers = new Map();    // category -> L.LayerGroup
 const categoryCounts = new Map();    // category -> number
 const allMarkers = L.featureGroup(); // to fit bounds / zoom visible
 
+function makeClusterGroup() {
+  return L.markerClusterGroup({
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: true,
+    zoomToBoundsOnClick: true,
+
+    iconCreateFunction: function (cluster) {
+      const count = cluster.getChildCount();
+
+      // Neutral, category-agnostic cluster marker
+      return L.divIcon({
+        html: `<div class="cluster-badge"><span>${count}</span></div>`,
+        className: "cluster-icon",
+        iconSize: [36, 36]
+      });
+    }
+  });
+}
+
 function getOrCreateCategoryLayer(category) {
   const key = category || "Uncategorised";
   if (!categoryLayers.has(key)) {
-    // Cluster group per category (so your checkbox filtering still works)
-    const cluster = L.markerClusterGroup({
-      showCoverageOnHover: false,
-      spiderfyOnMaxZoom: true,
-      zoomToBoundsOnClick: true
-    });
-    categoryLayers.set(key, cluster);
+    categoryLayers.set(key, makeClusterGroup());
   }
   return categoryLayers.get(key);
 }
