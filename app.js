@@ -106,13 +106,13 @@ const bounds = L.latLngBounds([[-85, -180], [85, 180]]);
 map.setMaxBounds(bounds);
 map.options.maxBoundsViscosity = 1.0;
 
-// CARTO Positron tiles
-L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
+// CARTO Voyager (colour but still clean)
+L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
   minZoom: TILE_MIN_ZOOM,
   maxZoom: TILE_MAX_ZOOM,
   maxNativeZoom: TILE_MAX_ZOOM,
   noWrap: true,
-  attribution: "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
+  attribution: "© OpenStreetMap contributors © CARTO"
 }).addTo(map);
 
 // Collapsible panel behaviour
