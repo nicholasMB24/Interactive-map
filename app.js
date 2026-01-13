@@ -255,20 +255,6 @@ function setAllCheckboxes(checked) {
 selectAllBtn.addEventListener("click", () => setAllCheckboxes(true));
 selectNoneBtn.addEventListener("click", () => setAllCheckboxes(false));
 
-zoomVisibleBtn.addEventListener("click", () => {
-  const b = L.latLngBounds([]);
-
-  for (const [cat, layer] of categoryLayers.entries()) {
-    if (!map.hasLayer(layer)) continue;
-
-    // markerClusterGroup provides getBounds()
-    const lb = layer.getBounds?.();
-    if (lb && lb.isValid && lb.isValid()) b.extend(lb);
-  }
-
-  if (b.isValid()) map.fitBounds(b, { padding: [30, 30], maxZoom: TILE_MAX_ZOOM });
-});
-
 // Load data
 (async function init() {
   try {
