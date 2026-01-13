@@ -60,8 +60,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -100.445882,
-          39.7837304
+          -93.646568,
+          42.122877
         ]
       },
       "properties": {
@@ -492,13 +492,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.1109318,
-          8.0018709
+          -67.031659,
+          13.449891
         ]
       },
       "properties": {
         "id*": "SCR-2025-12-019",
-        "category *": "Piracy",
+        "category *": "Trade Policy (Tariffs, quotas, barriers)",
         "title*": "Naval Quarantine (Dec 17)",
         "date": null,
         "country": "Venezuela",
@@ -681,8 +681,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          4.351697,
-          50.8465573
+          13.803343,
+          48.672335
         ]
       },
       "properties": {
