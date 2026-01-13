@@ -204,24 +204,44 @@ function buildFiltersUI() {
       updateVisibleCount();
     });
 
+    const catNorm = normaliseCategory(cat);
+    const filename = CATEGORY_ICON_FILE[catNorm] || CATEGORY_ICON_FILE["Other"];
+    const iconSrc = `assets/icons/${filename}`;
+
+    const icon = document.createElement("img");
+    icon.className = "filter-item__icon";
+    icon.src = iconSrc;
+    icon.alt = ""; // decorative
+    icon.loading = "lazy";
+
     const meta = document.createElement("div");
-    meta.className = "filter-item__meta";
+  meta.className = "filter-item__meta";
 
-    const label = document.createElement("div");
-    label.className = "filter-item__label";
-    label.textContent = cat;
+  const label = document.createElement("div");
+  label.className = "filter-item__label";
 
-    const count = document.createElement("div");
-    count.className = "filter-item__count";
-    count.textContent = `${categoryCounts.get(cat) || 0} event(s)`;
+  // NEW: label becomes a row containing icon + text
+  const labelRow = document.createElement("div");
+  labelRow.className = "filter-item__labelRow";
 
-    meta.appendChild(label);
-    meta.appendChild(count);
+  const labelText = document.createElement("span");
+  labelText.textContent = cat;
 
-    wrapper.appendChild(checkbox);
-    wrapper.appendChild(meta);
+  labelRow.appendChild(icon);
+  labelRow.appendChild(labelText);
+  label.appendChild(labelRow);
 
-    filtersEl.appendChild(wrapper);
+  const count = document.createElement("div");
+  count.className = "filter-item__count";
+  count.textContent = `${categoryCounts.get(cat) || 0} event(s)`;
+
+  meta.appendChild(label);
+  meta.appendChild(count);
+
+  wrapper.appendChild(checkbox);
+  wrapper.appendChild(meta);
+
+  filtersEl.appendChild(wrapper);
   }
 }
 
