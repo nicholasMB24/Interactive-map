@@ -181,3 +181,26 @@ html, body {
   margin: 0;
   font-size: 13px;
 }
+
+/* Category icons (SVGs) as markers */
+.category-marker {
+  background: none;
+  border: none;
+}
+
+.category-marker__pin {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  display: grid;
+  place-items: center;
+}
+
+.category-marker__pin img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
