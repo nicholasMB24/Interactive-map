@@ -86,7 +86,6 @@ const filtersEl = document.getElementById("filters");
 const visibleCountEl = document.getElementById("visibleCount");
 const selectAllBtn = document.getElementById("selectAll");
 const selectNoneBtn = document.getElementById("selectNone");
-const zoomVisibleBtn = document.getElementById("zoomVisible");
 
 // Panel collapse elements
 const panelEl = document.querySelector(".panel");
