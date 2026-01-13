@@ -204,3 +204,25 @@ html, body {
   height: 16px;
   display: block;
 }
+
+.cluster-icon {
+  background: none;
+  border: none;
+}
+
+.cluster-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.85);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  border: 2px solid rgba(255,255,255,0.9);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  font: 700 13px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.cluster-badge span {
+  transform: translateY(0.5px);
+}
