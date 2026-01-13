@@ -38,6 +38,19 @@ html, body {
   z-index: 500;
 }
 
+.filter-item__labelRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-item__icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  opacity: 0.9;
+}
+
 /* Header now includes the toggle button */
 .panel__header {
   padding: 12px 12px 10px;
